@@ -1,0 +1,221 @@
+// 담당 지역 코드 / 负责地区代码
+// 원본 파일 / 原始文件: lib/models/city_data.dart
+// 사용 방법 / 使用方法: 이 코드를 city_data.dart에 넣고 cities 목록에 등록합니다. / 将本代码放入 city_data.dart，并在 cities 列表中注册。
+
+import 'package:flutter/material.dart';
+
+import 'travel_models.dart';
+
+const weihaiCity = CityTravelData(
+  id: 'weihai',
+  province: '산둥성 / 山东省',
+  city: '웨이하이시 / 威海市',
+  displayName: '산둥성 웨이하이시 / 山东省威海市',
+  shortName: '웨이하이 / 威海',
+  moduleTag: '해안 여행 모듈 / 海滨旅行模块',
+  moduleSubtitle: '바다, 섬, 역사, 해산물, 3일 여유 코스 / 海岸、海岛、历史、海鲜与 3 天游线',
+  heroTitle: '웨이하이 Weihai / 威海',
+  heroSubtitle:
+      '맑은 바다와 해안 산책길, 조용한 휴양 분위기가 있는 도시입니다. / 清澈海湾、海岸步道与安静度假感，是威海的城市气质。',
+  heroImages: [
+    'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80',
+    'https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=1200&q=80',
+    'https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1200&q=80',
+  ],
+  introLines: [
+    IntroLine(
+      label: '지리 위치 / 地理位置',
+      text: '산둥반도 동쪽 끝에 있으며 황해와 마주합니다. / 位于山东半岛东端，濒临黄海。',
+    ),
+    IntroLine(
+      label: '도시 소개 / 城市简介',
+      text: '해변 휴양, 섬 여행, 근대 해방 역사 자원이 어우러진 도시입니다. / 是融合滨海度假、海岛游与近代海防历史的城市。',
+    ),
+    IntroLine(
+      label: '기후 특징 / 气候特点',
+      text: '해양성 영향이 뚜렷해 여름은 비교적 시원하고 겨울은 바람이 강합니다. / 海洋性特征明显，夏季较清爽，冬季海风较强。',
+    ),
+    IntroLine(
+      label: '도시 특색 / 城市特色',
+      text:
+          '깨끗한 해안선, 해산물, 류궁다오 역사와 느린 해변 생활이 특징입니다. / 干净海岸线、海鲜、刘公岛历史与慢节奏海滨生活是特色。',
+    ),
+  ],
+  attractions: [
+    Attraction(
+      name: '류궁다오 / 刘公岛',
+      imageUrl:
+          'https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1200&q=80',
+      summary: '갑오전쟁 역사와 섬 풍경을 함께 볼 수 있는 대표 명소입니다. / 可同时了解甲午历史与海岛风光，是威海代表景点。',
+      highlights: ['박물관 관람 / 博物馆参观', '섬 산책 / 海岛漫步', '해안 전망 / 海岸远眺'],
+      address: '산둥성 웨이하이시 환추이구 / 山东省威海市环翠区',
+      openTime: '선박과 날씨 영향을 받으므로 출발 전 확인이 필요합니다. / 受船班和天气影响，出发前建议确认。',
+    ),
+    Attraction(
+      name: '웨이하이 국제해수욕장 / 威海国际海水浴场',
+      imageUrl:
+          'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80',
+      summary: '넓은 모래사장과 완만한 해안으로 산책과 물놀이가 편한 곳입니다. / 沙滩开阔、海岸平缓，适合散步和亲水。',
+      highlights: ['해변 산책 / 海边散步', '일몰 감상 / 看日落', '여름 물놀이 / 夏季玩水'],
+      address: '산둥성 웨이하이시 환추이구 / 山东省威海市环翠区',
+      openTime: '해변은 대체로 종일 접근 가능하며 안전 안내를 따르세요. / 海滩通常可全天接近，请遵守安全提示。',
+    ),
+    Attraction(
+      name: '화쥐바제 / 火炬八街',
+      imageUrl:
+          'https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=1200&q=80',
+      summary:
+          '바다를 향해 내려가는 길과 사진 포인트로 젊은 여행자에게 인기입니다. / 通向大海的街道视角很适合拍照，深受年轻游客欢迎。',
+      highlights: ['거리 사진 / 街景拍照', '카페 휴식 / 咖啡休息', '바다 전망 / 远眺大海'],
+      address: '산둥성 웨이하이시 고구 / 山东省威海市高区',
+      openTime: '거리 공간은 자유롭게 둘러볼 수 있습니다. / 街区空间可自由游览。',
+    ),
+  ],
+  foods: [
+    Food(
+      name: '해산물 찜 / 海鲜蒸锅',
+      imageUrl:
+          'https://images.unsplash.com/photo-1559737558-2f5a35f4523b?auto=format&fit=crop&w=1200&q=80',
+      description: '조개, 새우, 게 등을 신선하게 쪄 먹는 방식입니다. / 将贝类、虾蟹等蒸制，突出新鲜原味。',
+      taste: '담백하고 바다 향이 선명합니다. / 清鲜原味，海味明显。',
+    ),
+    Food(
+      name: '고등어 물만두 / 鲅鱼水饺',
+      imageUrl:
+          'https://images.unsplash.com/photo-1496116218417-1a781b1c416c?auto=format&fit=crop&w=1200&q=80',
+      description: '산둥 해안 지역에서 즐기는 생선 소 만두입니다. / 山东沿海常见的鱼肉馅水饺。',
+      taste: '부드럽고 육즙이 많습니다. / 口感鲜嫩多汁。',
+    ),
+    Food(
+      name: '해초 냉채 / 海菜凉拌',
+      imageUrl:
+          'https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&w=1200&q=80',
+      description: '해조류를 새콤하고 산뜻하게 무친 반찬입니다. / 用海菜凉拌成清爽小菜。',
+      taste: '상큼하고 느끼함을 잡아줍니다. / 清爽解腻。',
+    ),
+  ],
+  itinerary: [
+    ItineraryDay(
+      day: 'Day 1 / 第 1 天',
+      title: '해변 첫날 / 海滨初印象',
+      highlight: '국제해수욕장과 화쥐바제를 중심으로 가볍게 시작합니다. / 从国际海水浴场和火炬八街轻松开始。',
+      items: [
+        RouteItem(
+          time: '15:00',
+          place: '호텔 체크인 / 酒店入住',
+          duration: '1시간 / 1小时',
+          note: '해변 가까운 숙소 추천 / 建议选择靠海住宿。',
+        ),
+        RouteItem(
+          time: '16:30',
+          place: '국제해수욕장 / 国际海水浴场',
+          duration: '2시간 / 2小时',
+          note: '모래사장 산책과 일몰 / 沙滩散步看日落。',
+        ),
+        RouteItem(
+          time: '19:00',
+          place: '해산물 저녁 / 海鲜晚餐',
+          duration: '1.5시간 / 1.5小时',
+          note: '찜 해산물과 만두 추천 / 推荐海鲜蒸锅和鲅鱼水饺。',
+        ),
+      ],
+    ),
+    ItineraryDay(
+      day: 'Day 2 / 第 2 天',
+      title: '류궁다오와 역사 / 刘公岛与历史',
+      highlight: '섬 여행과 역사 관람을 하루 중심 일정으로 잡습니다. / 以海岛和历史参观作为一天核心。',
+      items: [
+        RouteItem(
+          time: '08:30',
+          place: '선착장 이동 / 前往码头',
+          duration: '40분 / 40分钟',
+          note: '날씨와 선박 정보를 확인 / 确认天气和船班。',
+        ),
+        RouteItem(
+          time: '10:00',
+          place: '류궁다오 / 刘公岛',
+          duration: '4시간 / 4小时',
+          note: '박물관과 해안길 관람 / 参观博物馆和海岸步道。',
+        ),
+        RouteItem(
+          time: '16:00',
+          place: '환하이루 드라이브 / 环海路',
+          duration: '2시간 / 2小时',
+          note: '해안 풍경 감상 / 欣赏海岸风景。',
+        ),
+      ],
+    ),
+    ItineraryDay(
+      day: 'Day 3 / 第 3 天',
+      title: '사진과 귀가 / 拍照与返程',
+      highlight: '화쥐바제와 카페 산책으로 마무리합니다. / 用火炬八街和咖啡散步收尾。',
+      items: [
+        RouteItem(
+          time: '09:30',
+          place: '화쥐바제 / 火炬八街',
+          duration: '1.5시간 / 1.5小时',
+          note: '사람 적은 시간에 사진 촬영 / 人少时更适合拍照。',
+        ),
+        RouteItem(
+          time: '11:30',
+          place: '카페 휴식 / 咖啡休息',
+          duration: '1시간 / 1小时',
+          note: '바다 전망 카페 추천 / 推荐海景咖啡。',
+        ),
+        RouteItem(
+          time: '14:00',
+          place: '귀가 / 返程',
+          duration: '교통편에 따름 / 按交通而定',
+          note: '역 또는 공항으로 이동 / 前往车站或机场。',
+        ),
+      ],
+    ),
+  ],
+  quickEntries: [
+    QuickEntry(
+      title: '도시 소개 / 城市介绍',
+      subtitle: '해안 도시와 기후 / 海滨城市与气候',
+      icon: Icons.waves_rounded,
+      color: Color(0xFF2E7D8A),
+    ),
+    QuickEntry(
+      title: '대표 명소 / 代表景点',
+      subtitle: '류궁다오, 해수욕장, 화쥐바제 / 刘公岛、海水浴场、火炬八街',
+      icon: Icons.photo_camera_rounded,
+      color: Color(0xFF3F6B91),
+    ),
+    QuickEntry(
+      title: '해산물 / 海鲜美食',
+      subtitle: '찜 해산물과 고등어 만두 / 海鲜蒸锅与鲅鱼水饺',
+      icon: Icons.restaurant_rounded,
+      color: Color(0xFF9A6A30),
+    ),
+    QuickEntry(
+      title: 'AI 문답 / 智能问答',
+      subtitle: '웨이하이 여행 조언 / 威海旅行建议',
+      icon: Icons.auto_awesome_rounded,
+      color: Color(0xFF7A5B99),
+    ),
+  ],
+  aiGreeting:
+      '안녕하세요, 웨이하이 여행 도우미입니다. “해변”, “해산물”, “류궁다오”를 물어보세요. / 你好，我是威海旅行助手。可以问我“海边怎么玩”“吃什么海鲜”“刘公岛怎么安排”。',
+  aiAnswers: [
+    AiAnswerRule(
+      keywords: ['海', '바다', '해변'],
+      answer:
+          '국제해수욕장, 환하이루, 화쥐바제를 연결하면 바다 풍경을 보기 좋습니다. / 国际海水浴场、环海路和火炬八街连起来很适合看海。',
+    ),
+    AiAnswerRule(
+      keywords: ['吃', '海鲜', '음식', '해산물'],
+      answer: '해산물 찜, 고등어 물만두, 해초 냉채를 추천합니다. / 推荐海鲜蒸锅、鲅鱼水饺和海菜凉拌。',
+    ),
+    AiAnswerRule(
+      keywords: ['刘公岛', '류궁다오', '历史', '역사'],
+      answer: '류궁다오는 배편과 날씨를 먼저 확인하고 반나절 이상 잡는 것이 좋습니다. / 刘公岛建议先查船班和天气，预留半天以上。',
+    ),
+  ],
+  defaultAiAnswer:
+      '웨이하이는 해변 산책, 섬 역사, 해산물을 묶으면 가장 자연스러운 코스가 됩니다. / 威海适合把海边散步、海岛历史和海鲜组合起来。',
+  icon: Icons.waves_rounded,
+);
+
